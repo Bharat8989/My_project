@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/project1/favicon logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="formstyle.css">
+    <title>Registration form </title>
+</head>
+<body>
+    <div class="Container">
+        <form action="">
+            <h2>Registration</h2>
+            <div class="content">
+                <div class="input-box">
+                    <label for="name">Full Name :</label>
+                    <input type="text" placeholder="Enter full name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <label for="username">Username :</label>
+                    <input type="text" placeholder="Enter username" name="uname" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email :</label>
+                    <input type="email" placeholder="Enter your valid email address" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="Phone">Enter phone number :</label>
+                    <input type="tel" placeholder="Enter phone number" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <!-- <label for="phone">Enter phone number : <small>Format:123-456-7890</small></label>
+                    <input type="tel" placeholder="Enter phone number" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> -->
+                </div>
+                <div class="input-box">
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="Enter new password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirm-Password :</label>
+                    <input type="password" placeholder="Confirm-Password " name="confirm-password" required><br>
+                </div>
+                <div class="gender-category">
+                     <input type="radio" name="gender" id="male">
+                     <label for="male">male</label>
+                     <br>
+                     <input type="radio" name="gender" id="female">
+                     <label for="female">female</label>
+                     <br>
+                     <input type="radio" name="gender" id="other">
+                     <label for="other">other</label>
+                </div>
+                <div class="alert"> 
+                    <p>By clicking Sign Up, you agree to our <a href="#">Team,</a><a href="#">Privacy Policy</a> and <a href="#">Cookies Policy,</a> You may recive sms notifications ferom us and can opt out at any time.</p>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
