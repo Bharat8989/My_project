@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="shortcut icon" href="Images/favicon logo1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        #log{
+            color: blue;
+            background-color: yellow ;
+            border: 1px solid aqua;
+            border-radius: 2px;
+            margin: 5px;
+            position: absolute;
+            animation: 5s ease-in-out 0s infinite alternate none running leftMovement;
+           
+
+        }
+         @keyframes leftMovement {
+            from {
+                top:0 ;
+                left: 0;
+            }
+            to {
+                top:0;
+                left:900px; 
+            }
+        } 
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <nav class="navbar">
+            <p  id="log"> free delivery </p>
+            <a href="#" class="logo">Restaurant <span></span></a>
+            <ul class="Menu-links">
+                <span   id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <span   id="menu-btn" class="material-symbols-outlined">menu</span>
+            
+        </nav>
+    </header>
+    <!-- Banner section -->
+    <section class="banner-section">
+        <div class="content">
+            <h2>Hundreds of flavors under one root.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <button>Order Now</button>
+        </div>
+    </section>
+</body>
+<script>
+    const header= document.querySelector(header);
+    const menuBtn= document.querySelector(#menu-btn);
+    const closeMenuBtn= document.querySelector(#close-menu-btn);
+    menuBtn.addEventListener("click",()=>header.classList.toggle("show-menu"));
+    closeMenuBtn.addEventListener("click" ,()=>menuBtn.click());
+</script>
+</html>
